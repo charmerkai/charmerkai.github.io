@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hexo on Hello Friend NG</title>
+    <link>localhost/tags/hexo/</link>
+    <description>Recent content in hexo on Hello Friend NG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 30 Jan 2018 20:31:20 +0000</lastBuildDate><atom:link href="localhost/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hexo的图标配置</title>
+      <link>localhost/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 30 Jan 2018 20:31:20 +0000</pubDate>
+      
+      <guid>localhost/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;在hexo的主题优化中，我碰到了许多问题，印象最深的是界面中小图标的配置，没有具体的教程，只能自行摸索，故将整个过程记录下来，供需要的人参考。
+当然，全文基于小白视角，前端大佬可以忽略这篇文章。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-寻找图标&#34;&gt;·1 寻找图标&lt;/h2&gt;
+&lt;p&gt;由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;weibo&amp;#39;&lt;/span&gt;) 
+	&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iconfont icon-weibo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/i&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 &lt;a href=&#34;http://www.iconfont.cn/&#34;&gt;iconfont&lt;/a&gt; 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，&lt;a href=&#34;http://fontawesome.com/&#34;&gt;Font Awesome&lt;/a&gt;，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>localhost/</loc>
+    <lastmod>2018-01-30T20:31:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/hexo/</loc>
+    <lastmod>2018-01-30T20:31:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2018-01-30T20:31:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/posts/</loc>
+    <lastmod>2018-01-30T20:31:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/</loc>
+    <lastmod>2018-01-30T20:31:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/%E9%92%BB%E7%A0%94%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2018-01-30T20:31:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost/series/</loc>
+  </url>
+  
+</urlset>
