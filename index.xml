@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 30 Jan 2018 20:31:20 +0000</lastBuildDate><atom:link href="https://charmerkai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Nov 2020 17:26:55 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aboutme</title>
+      <link>https://charmerkai.github.io/aboutme/aboutme/</link>
+      <pubDate>Wed, 04 Nov 2020 17:26:55 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/aboutme/aboutme/</guid>
+      <description>Hi 这里是一位 95 后硬件攻城狮
+目前在做的有趣的事包括：
+ 计算机杂谈系列轻科普节目，可访问 b 站，取指来译码 芯片设计工程师，自行开发的开源 RISCV 芯片项目，KAIRISCV 待补充。。。  如果你也喜欢了解计算机发展的历史，就帮忙给我的视频点个赞吧。开源内核还在开发中，计划后期出现场讲解的视频。
+End </description>
+    </item>
+    
     <item>
       <title>hexo的图标配置</title>
       <link>https://charmerkai.github.io/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</link>
