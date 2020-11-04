@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hexo on Hello Friend NG</title>
-    <link>localhost/tags/hexo/</link>
+    <link>https://charmerkai.github.io/tags/hexo/</link>
     <description>Recent content in hexo on Hello Friend NG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 30 Jan 2018 20:31:20 +0000</lastBuildDate><atom:link href="localhost/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2018 20:31:20 +0000</lastBuildDate><atom:link href="https://charmerkai.github.io/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hexo的图标配置</title>
-      <link>localhost/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</link>
+      <link>https://charmerkai.github.io/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 30 Jan 2018 20:31:20 +0000</pubDate>
       
-      <guid>localhost/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://charmerkai.github.io/posts/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;在hexo的主题优化中，我碰到了许多问题，印象最深的是界面中小图标的配置，没有具体的教程，只能自行摸索，故将整个过程记录下来，供需要的人参考。
 当然，全文基于小白视角，前端大佬可以忽略这篇文章。&lt;/p&gt;
 &lt;hr&gt;
