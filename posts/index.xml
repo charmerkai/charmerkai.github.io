@@ -722,6 +722,7 @@ lll
 </code></pre></div><p>很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 <a href="http://www.iconfont.cn/">iconfont</a> 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，<a href="http://fontawesome.com/">Font Awesome</a>，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。</p>
 <h2 id="2配置文件">·2配置文件</h2>
 <p>在Font Awesome的官网点击下载，解压后会有这么四个文件夹</p>
+<p><img src="https://user-images.githubusercontent.com/34911891/98196473-30710700-1f5f-11eb-8ef3-d3501bf4e44a.png" alt=""></p>
 <p>lll</p>
 <!-- raw HTML omitted -->
 <p>我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。</p>
