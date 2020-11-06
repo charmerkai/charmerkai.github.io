@@ -9,9 +9,6 @@
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &amp;#39;weibo&amp;#39;) &amp;lt;i class=&amp;#34;iconfont icon-weibo&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-cloudsrc
-cloud
-issue
 github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
@@ -51,9 +48,6 @@ github
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &#39;weibo&#39;) &lt;i class=&#34;iconfont icon-weibo&#34;&gt;&lt;/i&gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-cloudsrc
-cloud
-issue
 github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
@@ -64,7 +58,7 @@ github
 &lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。">
 <meta itemprop="datePublished" content="2018-01-30T20:31:20+08:00" />
 <meta itemprop="dateModified" content="2018-01-30T20:31:20+08:00" />
-<meta itemprop="wordCount" content="78">
+<meta itemprop="wordCount" content="75">
 <meta itemprop="image" content="https://charmerkai.github.io"/>
 
 
@@ -79,9 +73,6 @@ github
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &#39;weibo&#39;) &lt;i class=&#34;iconfont icon-weibo&#34;&gt;&lt;/i&gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-cloudsrc
-cloud
-issue
 github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
@@ -98,9 +89,6 @@ github
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &#39;weibo&#39;) &lt;i class=&#34;iconfont icon-weibo&#34;&gt;&lt;/i&gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-cloudsrc
-cloud
-issue
 github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
@@ -225,14 +213,9 @@ github
 </code></pre></div><p>很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 <a href="http://www.iconfont.cn/">iconfont</a> 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，<a href="http://fontawesome.com/">Font Awesome</a>，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。</p>
 <h2 id="2配置文件">·2配置文件</h2>
 <p>在Font Awesome的官网点击下载，解压后会有这么四个文件夹</p>
-<p>cloudsrc</p>
-<!-- raw HTML omitted -->
-<p>cloud</p>
 <p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%201.png" alt=""></p>
-<p>issue</p>
-<p><img src="https://user-images.githubusercontent.com/34911891/98196473-30710700-1f5f-11eb-8ef3-d3501bf4e44a.png" alt=""></p>
 <p>github</p>
-<!-- raw HTML omitted -->
+<p><img src="https://raw.githubusercontent.com/charmerkai/img-storage-blog/master/2018-01/hexo%201.png" alt=""></p>
 <p>我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。</p>
 <p>接下来进行css文件的配置，注意到css文件总共有五种组合，
 <!-- raw HTML omitted --></p>
@@ -299,7 +282,7 @@ github
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        78 Words
+        75 Words
       </p>
 
       <p>
