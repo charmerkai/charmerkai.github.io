@@ -625,6 +625,7 @@ AMUSING OURSELVES TO DEATH
             <guid>https://charmerkai.github.io/posts/2018-02/%E5%94%87%E4%B8%8A%E7%95%99%E6%AD%8C%E5%BF%83%E4%B8%AD%E7%95%99%E6%A2%A6/</guid>
             <description> 今天想说说唇上之歌这部电影，之前在回家的高铁上无事可做，发现手机还有缓存的gakki电影没有看，就花了两个小时观看了这部2015年的青春剧情片。
 剧情没有什么出彩的地方，Gakki扮演的音乐老师顶替请假的朋友来岛上代课，合唱团的女同学因为新老师以及慕名前来的男团员发生隔阂，最后大家重归于好，共同完成合唱大赛的故事，一贯的小清新式剧情片，故事发生在小岛上，美丽的沙滩，沿海的公路，岛上居民特有的互相关照，都将这个故事导向最好的结局。
+https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-02/%E5%94%87%E4%B8%8A%E4%B9%8B%E6%AD%8C%201.jpg
 当然过程不会总是一帆风顺，这也是影片中相对出彩的地方，七砂从小被爸爸抛弃，长大后爸爸回来看她，本以为是浪子回头，却偷了家里的钱又跑了；阿哲每天上学都要照顾自闭症的哥哥，没什么时间做别的事，无意中加入合唱团并爱上了唱歌，只是这样没时间照顾哥哥，被家里要求退出；柏木老师曾是许多人羡慕的钢琴演奏家，却因前男友在她演奏时出事留下心结，从此不再碰钢琴。所幸七砂有爷爷奶奶一直照顾她长大，支持她的音乐，给她勇气和爱；阿哲的妈妈保全了他对于音乐的欣喜，挤出时间来照顾哥哥，希望音乐带给他友谊和青春；柏木老师最终在合唱团热情的感化下重新开始演奏。每个人都与过去的自己告别，迎接新的自己，带着周围人的关怀，带着十五岁的梦。
 电影是根据日本混血歌手安吉拉·亚纪的名曲《写信~拜启 给十五岁的你~》为轴衍生，中间柏木老师给每个人布置了为十五年后的自己写一封信，不过只有阿哲完成了，阿哲也是戏中最小的演员，难道是因为导演想把最纯真的心底的秘密表达出来么。最后的合唱大赛既定曲目就是这首歌，其实整部电影看下来没有太大的情绪起伏，但是到了大合唱环节，心情有很大波动，可能是片中每个人的经历混杂在一起，友谊，欣喜，热爱，勇气，梦想，释怀，感恩，这些我们每个人青春中都有的最平常的东西，最终构成了每个人的，最不平常的，青春。
  致十五岁的独唱者：
@@ -635,6 +636,7 @@ Keep on believing.
             <content type="html"><![CDATA[<hr>
 <p>今天想说说唇上之歌这部电影，之前在回家的高铁上无事可做，发现手机还有缓存的gakki电影没有看，就花了两个小时观看了这部2015年的青春剧情片。</p>
 <p>剧情没有什么出彩的地方，Gakki扮演的音乐老师顶替请假的朋友来岛上代课，合唱团的女同学因为新老师以及慕名前来的男团员发生隔阂，最后大家重归于好，共同完成合唱大赛的故事，一贯的小清新式剧情片，故事发生在小岛上，美丽的沙滩，沿海的公路，岛上居民特有的互相关照，都将这个故事导向最好的结局。</p>
+<p><a href="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-02/%E5%94%87%E4%B8%8A%E4%B9%8B%E6%AD%8C%201.jpg">https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-02/%E5%94%87%E4%B8%8A%E4%B9%8B%E6%AD%8C%201.jpg</a></p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p>当然过程不会总是一帆风顺，这也是影片中相对出彩的地方，七砂从小被爸爸抛弃，长大后爸爸回来看她，本以为是浪子回头，却偷了家里的钱又跑了；阿哲每天上学都要照顾自闭症的哥哥，没什么时间做别的事，无意中加入合唱团并爱上了唱歌，只是这样没时间照顾哥哥，被家里要求退出；柏木老师曾是许多人羡慕的钢琴演奏家，却因前男友在她演奏时出事留下心结，从此不再碰钢琴。所幸七砂有爷爷奶奶一直照顾她长大，支持她的音乐，给她勇气和爱；阿哲的妈妈保全了他对于音乐的欣喜，挤出时间来照顾哥哥，希望音乐带给他友谊和青春；柏木老师最终在合唱团热情的感化下重新开始演奏。每个人都与过去的自己告别，迎接新的自己，带着周围人的关怀，带着十五岁的梦。</p>
@@ -704,7 +706,9 @@ Keep on believing.
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &amp;#39;weibo&amp;#39;) &amp;lt;i class=&amp;#34;iconfont icon-weibo&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-lll
+cloud
+issue
+github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-brands/css/fa-brands.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-regular/css/fa-regular.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-solid/css/fa-solid.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fontawesome/css/fontawesome.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fontawesome-all/css/fontawesome-all.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; 再根据官网的使用说明，添加
@@ -722,8 +726,11 @@ lll
 </code></pre></div><p>很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 <a href="http://www.iconfont.cn/">iconfont</a> 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，<a href="http://fontawesome.com/">Font Awesome</a>，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。</p>
 <h2 id="2配置文件">·2配置文件</h2>
 <p>在Font Awesome的官网点击下载，解压后会有这么四个文件夹</p>
+<p>cloud</p>
+<p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%201.png" alt=""></p>
+<p>issue</p>
 <p><img src="https://user-images.githubusercontent.com/34911891/98196473-30710700-1f5f-11eb-8ef3-d3501bf4e44a.png" alt=""></p>
-<p>lll</p>
+<p>github</p>
 <!-- raw HTML omitted -->
 <p>我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。</p>
 <p>接下来进行css文件的配置，注意到css文件总共有五种组合，
