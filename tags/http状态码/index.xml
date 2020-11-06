@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>http状态码 on Kane</title>
+    <link>https://charmerkai.github.io/tags/http%E7%8A%B6%E6%80%81%E7%A0%81/</link>
+    <description>Recent content in http状态码 on Kane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 12 Jul 2018 10:29:25 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/tags/http%E7%8A%B6%E6%80%81%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为什么偏偏是-404-not-found</title>
+      <link>https://charmerkai.github.io/posts/2018-07/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%81%8F%E5%81%8F%E6%98%AF-404-not-found/</link>
+      <pubDate>Thu, 12 Jul 2018 10:29:25 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2018-07/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%81%8F%E5%81%8F%E6%98%AF-404-not-found/</guid>
+      <description>在浏览网页的过程中，所有人都常见过的页面莫过于404 not found了，可是你有没有想过，为什么偏偏是404呢。为什么不是110,911（笑），在辗转反侧很久之后，我最终偶然的发现了这个网络传输中的标准
+首先我们从万维网联盟讲起
+ 万维网，world wide web，最早是在1994年由欧洲核子研究组织发展的，欧洲人为了更好地与麻省理工学院协同工作而发展的一种传输工具，也就是我们现在使用的各种网址来浏览来自世界各地的各种信息，随后为了致力于让所有背景，身体状况的人都能对web加以利用，W3C联盟被建立并对这一领域实施标准化，这一联盟十分重要，因此包括了软件开发商、内容提供商、企业用户、通信公司、研究机构、研究实验室、标准化团体以及政府等各种角色，其中有很多我们熟悉的，IBM、Microsoft、Apple、Adobe等。
+ Http协议，（HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议，是由W3C推荐并实施的一个标准，这个协议起作用于我们浏览网页的加载过程中，也就是我们在每次浏览网页输入网址后，由浏览器根据URL发出一个请求，当然格式会遵循协议的要求，这个请求被传到web服务器上，一般都是Apache，随后服务器又会根据这个协议来传回一些我们需要的HTML或图片的文件来显示在我们电脑屏幕上。
+而在浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求，这就是所谓的HTTP状态码（HTTP Status Code）
+HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：
+五种分类下衍生出41种具体的状态码，这之中就有我们常见的
+ 200 - 请求成功 301 - 资源（网页等）被永久转移到其它URL 404 - 请求的资源（网页等）不存在 500 - 内部服务器错误  值得一提的是通过404这个代码，网站设计人员还可设置&amp;quot;您所请求的资源无法找到&amp;quot;的个性页面，这就是我们常看到404界面各有千秋的原因，都是可（ku）爱（bi）的设计人员为了驱逐我们没找到网页的坏心情啦。
+所有的41个状态码可以参考这里
+W3C参考这里</description>
+    </item>
+    
+  </channel>
+</rss>

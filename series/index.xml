@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Hello Friend NG</title>
+    <title>Series on Kane</title>
     <link>https://charmerkai.github.io/series/</link>
-    <description>Recent content in Series on Hello Friend NG</description>
+    <description>Recent content in Series on Kane</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="https://charmerkai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 09 May 2018 16:50:10 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记录我读过的书</title>
+      <link>https://charmerkai.github.io/series/%E8%AE%B0%E5%BD%95%E6%88%91%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6/</link>
+      <pubDate>Wed, 09 May 2018 16:50:10 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/series/%E8%AE%B0%E5%BD%95%E6%88%91%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>记录我看过的电影</title>
+      <link>https://charmerkai.github.io/series/%E8%AE%B0%E5%BD%95%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E7%94%B5%E5%BD%B1/</link>
+      <pubDate>Sun, 06 May 2018 16:26:35 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/series/%E8%AE%B0%E5%BD%95%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E7%94%B5%E5%BD%B1/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

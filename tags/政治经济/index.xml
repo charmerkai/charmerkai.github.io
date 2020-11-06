@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>政治经济 on Kane</title>
+    <link>https://charmerkai.github.io/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/</link>
+    <description>Recent content in 政治经济 on Kane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 14 Feb 2018 09:24:30 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/tags/%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>美国政经有感</title>
+      <link>https://charmerkai.github.io/posts/2018-02/%E7%BE%8E%E5%9B%BD%E6%94%BF%E7%BB%8F%E6%9C%89%E6%84%9F/</link>
+      <pubDate>Wed, 14 Feb 2018 09:24:30 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2018-02/%E7%BE%8E%E5%9B%BD%E6%94%BF%E7%BB%8F%E6%9C%89%E6%84%9F/</guid>
+      <description>美国政经 最近在看《美国政经通史》，有种学习美国历史的感觉。关于美国到底是不是个民主国家，其实独立初期，各位国父是很痛恨民主的，因为最开始依照《民主联邦条约》建立起来的高度民主的联邦政体已然接近崩溃，各种动乱势力打着“民主”称号发动动乱，当然不止这一个原因，国父们许多都认为
+ 民主是包藏着毁灭其自身的燃烧物的火山，其必将喷发并造成毁灭。民主的已知倾向是将野心勃勃的号召和愚昧无知的信念当成权利来泛滥。
+ 所以大家致力于构建的是一个“共和政体”，体现在宪法的内容中就是：禁止人民参与治理国家。
+美国总统不是由美国人民一人一票直接选举出来的，而是由538名各州派出的代表直接投票产生的。先选出选举团，再由选举团选出总统，且他们没有罢免总统的权力。总统只有在严重违法并且被议会逮住了把柄，并且还要弄到连议会中本党的议员都众叛亲离之后，才有可能被议会赶下台。由此看来，高度集权的总统就是一个“独裁者”，这其实正是国父们希望看到的
+ 凡对罗马历史略知一二的人，无不通晓当时的共和政体曾不得不多次庇护于某个独裁者的绝对权力，依靠独裁者可怕的威慑力，对内制止野心家篡政夺权的阴谋，制止社会某些阶级威胁一切统治秩序的暴乱行为；对外防止外部敌人占领并毁灭罗马的威胁。这是众所周知的历史事实，无需提出更多的论点和实例。
+ 所以说，民主不一定是好事，民主应该只属于有判断力和良知的人，绝不是所有人。在从人类认知革命后产生的各种规模巨大的社会组织的各类管理方案的实践中，在这两个端点间找到平衡点才是坠好的。
+在之后的发展中，”进步时代“中的城市美化运动让我类似的想起了几年前的”创卫“，当然内容不一样但出发点是一样的，包括扒粪运动揭露的腐败，比起现在国内的有过之尤不及，只不过这都是二十世纪的事了，证明人家很久前也经历过类似的事情，所以这样，我们从中可以借鉴，思考的东西还是很多的。
+ MATLAB大程序 最近在调试一个目标检测模型DPM的代码，下载的是MATLAB版本的，按照网上的教程配置完毕，可是总会在读取模型后MATLAB内部崩溃，着实苦恼死我了，报错的原因是MEX文件运行时出了问题。MEX文件的话是MATLAB将C++代码转化的二进制文件，主要是为了混合编程运用的。
+查了几天关于MEX文件使MATLAB崩溃的文章，都没有找到很好的解释，而且有人还说将MEX在VS中调试，找到根源，不过VS中配置的过程看得我一愣一愣的。最后，都准备试试VS调试了，突然想到MATLAB新版本中已经加入了断点，我的程序运行一半才崩溃，证明前半部分还不错，加了断点不就可以找到出错的代码了，哪里还用什么MEX调试啊。
+说做就做，这里有一个很好的小发现，在MATLAB中点击具体的函数右键，是可以打开函数的.m文件的，最后断电停在了一行有关resize的地方，奇怪，MATLAB图像的话不是imresize么，我把它改过来，就顺理成章的好了。没想到纠结了几天的问题就是一个简单的resize函数导致的。
+哎，都是血淋淋的教训啊，以后多加断点，找到问题的根源，很快就解决了。
+ 哦，对了，2018新年快乐（送给看这篇文章的你）。</description>
+    </item>
+    
+  </channel>
+</rss>

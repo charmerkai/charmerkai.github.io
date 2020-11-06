@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Surface Go on Kane</title>
+    <link>https://charmerkai.github.io/tags/surface-go/</link>
+    <description>Recent content in Surface Go on Kane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 29 Mar 2019 09:53:53 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/tags/surface-go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surface Go 双系统折腾记</title>
+      <link>https://charmerkai.github.io/posts/2019-03/surface-go-%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
+      <pubDate>Fri, 29 Mar 2019 09:53:53 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2019-03/surface-go-%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
+      <description>在入手了 surface-go 之后，兴奋劲只持续了两个月，于是我打算新一轮的折腾。很久以前就说过，适时的折腾可能才是生活的乐趣之一，这次也不例外。不同的是，我打算干票大的，在微软的电脑 surface-go 上安装一直很喜欢的 Ubuntu 18.04 ，正好最近看到 18.04 可以变换为 mac OS 的主题，装好后那该多酷啊。
+准备工作 首先我们需要一个 Ubuntu 18.04 的启动 u 盘，这个网上有很多教程，我就不细讲了。其次由于 surface-go 只有一个 type-c 接口，因此我们还需要一根转接线。
+除了硬件上的准备，我们还需要在 Windows 系统（我的是 win 10 系统）里改变一些配置，打开设置，在顶端搜索 Bitlocker，打开加密解密的设置界面，点击关闭加密的按钮，这里关掉 Bitlocker 是为后面关闭 secure boot 不会出问题。否则系统会一直要求你输入密钥。同时根据需要从 Windows 中压缩出来需要的磁盘空间（我总共给 Ubuntu 分配了 60 G 的空间），就是那个分区时的操作，只不过点击“压缩卷”后不需要再分配。
+这里的 Bitlocker 是微软为了不让你的设备丢失后内部信息被轻易的读取而设置的，但是为了额外的 boot 设备，我们不得不忍痛割爱的禁用它，这个解密过程会持续一段时间，耐心等待即可。
+从 U 盘启动 Ubuntu 将电脑关机，u 盘通过转接线连接到 surface-go，这一步会碰到很多问题，我会介绍两种方案：
+正常配置 UEFI 参考 Microsoft 官网的说明，surface 笔记本都采取了 UEFI 替代了原来的 BIOS 启动。同时，进入 UEFI 的方式也不再是单纯的狂按 F12 了，你会按照下列步骤进入 UEFI 设置界面：</description>
+    </item>
+    
+    <item>
+      <title>Surface Go体验报告</title>
+      <link>https://charmerkai.github.io/posts/2019-01/surface-go/</link>
+      <pubDate>Tue, 01 Jan 2019 14:23:54 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2019-01/surface-go/</guid>
+      <description>十二月底，终于用研究生每个月发的津贴攒够了钱，于是入手了自己一直心心念念的surface go，自己的电脑用品一直都是dell的一款游戏本，什么都好，就是太重了，每次背着出去总是觉得不爽，但是游戏作为我生活中不可分割的一部分（尤其是overwatch，笑），直接转向mac系列显然不行，我就一直想着入手一款第二笔记本的产品，之前一直在ipad和surface go之间纠结，最终想到x86终究还是能满足自己的轻量编程需求，最终入手了这款surface go。
+surface go作为微软在surface mini大失败后的推出的针对中低端教育市场的产品，总共有两个配置，64Gssd+4G内存和128Gssd+8G内存。自我感觉如果手头不是那么紧，还是购买高配，毕竟一个win10系统还是需要不少空间的。刚到手的新机除去系统就只剩100G左右了，当然，微软最喜爱的sd卡槽还是没有被抛弃的，通过sd卡加大空间也是一种选择，但是那毕竟不是ssd啊。
+OK，废话不多说，进入正题
+机身配置 硬件 Surface Go处理器搭载的是奔腾系列金牌处理器4415Y，是微软2017年在奔腾系列中新加的一个系列，针对的市场是高于celeron低于core i3的市场，也就是说，性能也应该是在两者之间，值得一提的是，金采用的是intel的Kaby Lake微结构，是在本来的14nm工艺上的一种加强版，而这个Kaby Lake也是应用在7代core i3，i5，i7上的结构。4415Y的基频是1.6Ghz。
+cache 4415Y的cache结构是Kaby Lake常用的3级cache
+我们来看同样是应用在移动端的芯片i3-7007U的cache
+可以看到，1与2级cache的结构完全一致，都是8路组相连+4路组相连和写回的机制，3级cachei3就大了0.5倍，并且16路组相连也使得缺失率减小，当然3级cache一般是芯片外部和内存交互的，因此芯片内部一二级交互还是相同的，三级cache也是7007U在cache优于4415Y的地方。总的来说，相差得不太大。
+显卡 4415Y搭载intel集成显卡HD Graphics 615， 同样的，i3-7007U则是HD Graphics 620，虽然620最大存储32G比615的16G大了不少，但是基频都是300Mhz，同时对于集成显卡来说，本身就不是来做高性能的工作，如果你的定位就是低端的第二笔记本，这两者的差异不会对你产生很大的影响。
+主线速率和主频 4415Y的主频是1.6Ghz，主线速率为4GT/S，而7007U的主频是2.1Ghz，主线速率也是4GT/S。差异主要在主频上。两者的核数目都是2+。
+TLB TLB作为页表项缓存，和芯片的读写速度有很大的关系，由于intel的芯片公布的信息一般不是很多，关于TLB的结构和大小常常无从查知，但是显然的4415Y的TLB肯定是不如7007U的。
+结论  因此，虽然作为低于i3的市场的芯片，又是许多人觉得过时的奔腾系列，差异是存在的，但是和最基本的7代i3CPU，7007U，的差异并没有很多人想像的那么大。因此，作为一款低端便携的笔记本，金4415Y芯片的性能还是不错的。  机身 Surface Go的接口有一个标准耳机插孔，一个type-c接口，一个SD卡槽，还有一个充电接口，就使用的话，配上一个比较全面的type-c接口应该还是够用的。一直不太接受type-c的微软这个也装载了它，可能也是看中它强大的转接性把。顶上有音量键以及电源键，前向摄像头500万，后向是800万，日常需求也足够了，支持windows hello登陆，刷脸还是很方便的。
+我自己的话就是一个简单的转3个USB3.0+网线口的线就够用了。感觉还是很方便的。
+使用便利 Surface Go的win10自带office学生版，包括Word，Excel，PowerPoint，并且自带win10UWP的OneNote，如果需要更多功能，也可以免费下载OneNote2016。
+需要注意的是，surface go的win10默认是S模式，也就是安全模式，在这个模式下，只能从windows商店下载应用，也就是说，无法使用exe来安装应用，当然，你也可以自己从S模式切换到正常的win10模式，只需在设置 - 更新和安全 - 激活 找到切换到win10的按钮即可。但是，**这个过程是不可逆的！**我自己因为还需要装一个linux虚拟机，因此肯定不能使用S模式，目前就切换后的使用来说，并无大异。
+我目前的电子设备主要是一个dell笔记本和surface go，都是windows，一个苹果手机，IOS，因此选择OneDrive来做各个设备的同步，IOS商店可以免费下载到OneDrive，只需使用你的Microsoft账户登陆就可以了，传照片文件还是很方便的。
+本身S模式下surface go只能使用edge作为浏览器，切换后，我为了节省空间，继续使用edge，感觉还是不错的，平时的PDF也是用edge浏览的。
+便携性和价格 整个surface go屏幕是10.0英寸，不包含键盘的重量是522g，装在皮套里再放在书包里就感觉和一本书差不多，总之比起以前的游戏本，我是感到十分的轻松。
+键盘是最好配原装的，windows的触摸板现在功能也十分丰富，具体可以参考我以前的文章。
+本身裸机的价格是比ipad价格贵一些的，但是surface go键盘只要500人民币左右，因此加上键盘，就没有比全苹果一套贵多少了，作为一个最起码是x86架构的机子，这个价位还是可以接受的。当然你要是不需要发票，手头又有点紧，也可以去某宝搜便宜点的的surface go，我就是在那里入手的，避免打广告的嫌疑，就不说具体信息了。
+##日常学习和娱乐
+基本的软件都可以选择win10UWP版本，空间小，看论文，课件，记笔记我都在edge和OneNote上完成，娱乐基本就是听音乐和看视频，如果你乐意，可以下载应用商店的bilibili和网易云音乐，也可以直接在网页端登陆享受。日常的文本查看主要是notepad++和Typora，后者用来写markdown。notepad++推荐使用exe安装，因为我竟然发现商店的版本占空间比exe还要大。
+作为轻度编程，主要是在虚拟机中完成，本身gcc命令就感觉比windows里下载IDE方便多了，虚拟机的运行没有想象中的那么卡，剩余的空间也还足够使用。
+续航 在开着省电模式下，一直听着音乐，看着论文和课件，基本可以支持上午三个小时左右以及下午三个多小时的学习，到了晚上就需要充电了，因此如果不听音乐，可能支持一整天是没有问题的。
+总结 总的来说，目前surface go作为我的第二笔记本，用来查看课件，论文，写博客，听音乐，看视频都绰绰有余，安装的软件不是那么多，现在机子还有80多G空间。以后考虑挖掘到更多的实用技巧再分享出来。</description>
+    </item>
+    
+  </channel>
+</rss>

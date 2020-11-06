@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学而时习之 on Kane</title>
+    <link>https://charmerkai.github.io/categories/%E5%AD%A6%E8%80%8C%E6%97%B6%E4%B9%A0%E4%B9%8B/</link>
+    <description>Recent content in 学而时习之 on Kane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 29 Mar 2019 09:53:53 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/categories/%E5%AD%A6%E8%80%8C%E6%97%B6%E4%B9%A0%E4%B9%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surface Go 双系统折腾记</title>
+      <link>https://charmerkai.github.io/posts/2019-03/surface-go-%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
+      <pubDate>Fri, 29 Mar 2019 09:53:53 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2019-03/surface-go-%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
+      <description>在入手了 surface-go 之后，兴奋劲只持续了两个月，于是我打算新一轮的折腾。很久以前就说过，适时的折腾可能才是生活的乐趣之一，这次也不例外。不同的是，我打算干票大的，在微软的电脑 surface-go 上安装一直很喜欢的 Ubuntu 18.04 ，正好最近看到 18.04 可以变换为 mac OS 的主题，装好后那该多酷啊。
+准备工作 首先我们需要一个 Ubuntu 18.04 的启动 u 盘，这个网上有很多教程，我就不细讲了。其次由于 surface-go 只有一个 type-c 接口，因此我们还需要一根转接线。
+除了硬件上的准备，我们还需要在 Windows 系统（我的是 win 10 系统）里改变一些配置，打开设置，在顶端搜索 Bitlocker，打开加密解密的设置界面，点击关闭加密的按钮，这里关掉 Bitlocker 是为后面关闭 secure boot 不会出问题。否则系统会一直要求你输入密钥。同时根据需要从 Windows 中压缩出来需要的磁盘空间（我总共给 Ubuntu 分配了 60 G 的空间），就是那个分区时的操作，只不过点击“压缩卷”后不需要再分配。
+这里的 Bitlocker 是微软为了不让你的设备丢失后内部信息被轻易的读取而设置的，但是为了额外的 boot 设备，我们不得不忍痛割爱的禁用它，这个解密过程会持续一段时间，耐心等待即可。
+从 U 盘启动 Ubuntu 将电脑关机，u 盘通过转接线连接到 surface-go，这一步会碰到很多问题，我会介绍两种方案：
+正常配置 UEFI 参考 Microsoft 官网的说明，surface 笔记本都采取了 UEFI 替代了原来的 BIOS 启动。同时，进入 UEFI 的方式也不再是单纯的狂按 F12 了，你会按照下列步骤进入 UEFI 设置界面：</description>
+    </item>
+    
+    <item>
+      <title>Surface Go体验报告</title>
+      <link>https://charmerkai.github.io/posts/2019-01/surface-go/</link>
+      <pubDate>Tue, 01 Jan 2019 14:23:54 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2019-01/surface-go/</guid>
+      <description>十二月底，终于用研究生每个月发的津贴攒够了钱，于是入手了自己一直心心念念的surface go，自己的电脑用品一直都是dell的一款游戏本，什么都好，就是太重了，每次背着出去总是觉得不爽，但是游戏作为我生活中不可分割的一部分（尤其是overwatch，笑），直接转向mac系列显然不行，我就一直想着入手一款第二笔记本的产品，之前一直在ipad和surface go之间纠结，最终想到x86终究还是能满足自己的轻量编程需求，最终入手了这款surface go。
+surface go作为微软在surface mini大失败后的推出的针对中低端教育市场的产品，总共有两个配置，64Gssd+4G内存和128Gssd+8G内存。自我感觉如果手头不是那么紧，还是购买高配，毕竟一个win10系统还是需要不少空间的。刚到手的新机除去系统就只剩100G左右了，当然，微软最喜爱的sd卡槽还是没有被抛弃的，通过sd卡加大空间也是一种选择，但是那毕竟不是ssd啊。
+OK，废话不多说，进入正题
+机身配置 硬件 Surface Go处理器搭载的是奔腾系列金牌处理器4415Y，是微软2017年在奔腾系列中新加的一个系列，针对的市场是高于celeron低于core i3的市场，也就是说，性能也应该是在两者之间，值得一提的是，金采用的是intel的Kaby Lake微结构，是在本来的14nm工艺上的一种加强版，而这个Kaby Lake也是应用在7代core i3，i5，i7上的结构。4415Y的基频是1.6Ghz。
+cache 4415Y的cache结构是Kaby Lake常用的3级cache
+我们来看同样是应用在移动端的芯片i3-7007U的cache
+可以看到，1与2级cache的结构完全一致，都是8路组相连+4路组相连和写回的机制，3级cachei3就大了0.5倍，并且16路组相连也使得缺失率减小，当然3级cache一般是芯片外部和内存交互的，因此芯片内部一二级交互还是相同的，三级cache也是7007U在cache优于4415Y的地方。总的来说，相差得不太大。
+显卡 4415Y搭载intel集成显卡HD Graphics 615， 同样的，i3-7007U则是HD Graphics 620，虽然620最大存储32G比615的16G大了不少，但是基频都是300Mhz，同时对于集成显卡来说，本身就不是来做高性能的工作，如果你的定位就是低端的第二笔记本，这两者的差异不会对你产生很大的影响。
+主线速率和主频 4415Y的主频是1.6Ghz，主线速率为4GT/S，而7007U的主频是2.1Ghz，主线速率也是4GT/S。差异主要在主频上。两者的核数目都是2+。
+TLB TLB作为页表项缓存，和芯片的读写速度有很大的关系，由于intel的芯片公布的信息一般不是很多，关于TLB的结构和大小常常无从查知，但是显然的4415Y的TLB肯定是不如7007U的。
+结论  因此，虽然作为低于i3的市场的芯片，又是许多人觉得过时的奔腾系列，差异是存在的，但是和最基本的7代i3CPU，7007U，的差异并没有很多人想像的那么大。因此，作为一款低端便携的笔记本，金4415Y芯片的性能还是不错的。  机身 Surface Go的接口有一个标准耳机插孔，一个type-c接口，一个SD卡槽，还有一个充电接口，就使用的话，配上一个比较全面的type-c接口应该还是够用的。一直不太接受type-c的微软这个也装载了它，可能也是看中它强大的转接性把。顶上有音量键以及电源键，前向摄像头500万，后向是800万，日常需求也足够了，支持windows hello登陆，刷脸还是很方便的。
+我自己的话就是一个简单的转3个USB3.0+网线口的线就够用了。感觉还是很方便的。
+使用便利 Surface Go的win10自带office学生版，包括Word，Excel，PowerPoint，并且自带win10UWP的OneNote，如果需要更多功能，也可以免费下载OneNote2016。
+需要注意的是，surface go的win10默认是S模式，也就是安全模式，在这个模式下，只能从windows商店下载应用，也就是说，无法使用exe来安装应用，当然，你也可以自己从S模式切换到正常的win10模式，只需在设置 - 更新和安全 - 激活 找到切换到win10的按钮即可。但是，**这个过程是不可逆的！**我自己因为还需要装一个linux虚拟机，因此肯定不能使用S模式，目前就切换后的使用来说，并无大异。
+我目前的电子设备主要是一个dell笔记本和surface go，都是windows，一个苹果手机，IOS，因此选择OneDrive来做各个设备的同步，IOS商店可以免费下载到OneDrive，只需使用你的Microsoft账户登陆就可以了，传照片文件还是很方便的。
+本身S模式下surface go只能使用edge作为浏览器，切换后，我为了节省空间，继续使用edge，感觉还是不错的，平时的PDF也是用edge浏览的。
+便携性和价格 整个surface go屏幕是10.0英寸，不包含键盘的重量是522g，装在皮套里再放在书包里就感觉和一本书差不多，总之比起以前的游戏本，我是感到十分的轻松。
+键盘是最好配原装的，windows的触摸板现在功能也十分丰富，具体可以参考我以前的文章。
+本身裸机的价格是比ipad价格贵一些的，但是surface go键盘只要500人民币左右，因此加上键盘，就没有比全苹果一套贵多少了，作为一个最起码是x86架构的机子，这个价位还是可以接受的。当然你要是不需要发票，手头又有点紧，也可以去某宝搜便宜点的的surface go，我就是在那里入手的，避免打广告的嫌疑，就不说具体信息了。
+##日常学习和娱乐
+基本的软件都可以选择win10UWP版本，空间小，看论文，课件，记笔记我都在edge和OneNote上完成，娱乐基本就是听音乐和看视频，如果你乐意，可以下载应用商店的bilibili和网易云音乐，也可以直接在网页端登陆享受。日常的文本查看主要是notepad++和Typora，后者用来写markdown。notepad++推荐使用exe安装，因为我竟然发现商店的版本占空间比exe还要大。
+作为轻度编程，主要是在虚拟机中完成，本身gcc命令就感觉比windows里下载IDE方便多了，虚拟机的运行没有想象中的那么卡，剩余的空间也还足够使用。
+续航 在开着省电模式下，一直听着音乐，看着论文和课件，基本可以支持上午三个小时左右以及下午三个多小时的学习，到了晚上就需要充电了，因此如果不听音乐，可能支持一整天是没有问题的。
+总结 总的来说，目前surface go作为我的第二笔记本，用来查看课件，论文，写博客，听音乐，看视频都绰绰有余，安装的软件不是那么多，现在机子还有80多G空间。以后考虑挖掘到更多的实用技巧再分享出来。</description>
+    </item>
+    
+    <item>
+      <title>为什么偏偏是-404-not-found</title>
+      <link>https://charmerkai.github.io/posts/2018-07/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%81%8F%E5%81%8F%E6%98%AF-404-not-found/</link>
+      <pubDate>Thu, 12 Jul 2018 10:29:25 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2018-07/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%81%8F%E5%81%8F%E6%98%AF-404-not-found/</guid>
+      <description>在浏览网页的过程中，所有人都常见过的页面莫过于404 not found了，可是你有没有想过，为什么偏偏是404呢。为什么不是110,911（笑），在辗转反侧很久之后，我最终偶然的发现了这个网络传输中的标准
+首先我们从万维网联盟讲起
+ 万维网，world wide web，最早是在1994年由欧洲核子研究组织发展的，欧洲人为了更好地与麻省理工学院协同工作而发展的一种传输工具，也就是我们现在使用的各种网址来浏览来自世界各地的各种信息，随后为了致力于让所有背景，身体状况的人都能对web加以利用，W3C联盟被建立并对这一领域实施标准化，这一联盟十分重要，因此包括了软件开发商、内容提供商、企业用户、通信公司、研究机构、研究实验室、标准化团体以及政府等各种角色，其中有很多我们熟悉的，IBM、Microsoft、Apple、Adobe等。
+ Http协议，（HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议，是由W3C推荐并实施的一个标准，这个协议起作用于我们浏览网页的加载过程中，也就是我们在每次浏览网页输入网址后，由浏览器根据URL发出一个请求，当然格式会遵循协议的要求，这个请求被传到web服务器上，一般都是Apache，随后服务器又会根据这个协议来传回一些我们需要的HTML或图片的文件来显示在我们电脑屏幕上。
+而在浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求，这就是所谓的HTTP状态码（HTTP Status Code）
+HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：
+五种分类下衍生出41种具体的状态码，这之中就有我们常见的
+ 200 - 请求成功 301 - 资源（网页等）被永久转移到其它URL 404 - 请求的资源（网页等）不存在 500 - 内部服务器错误  值得一提的是通过404这个代码，网站设计人员还可设置&amp;quot;您所请求的资源无法找到&amp;quot;的个性页面，这就是我们常看到404界面各有千秋的原因，都是可（ku）爱（bi）的设计人员为了驱逐我们没找到网页的坏心情啦。
+所有的41个状态码可以参考这里
+W3C参考这里</description>
+    </item>
+    
+    <item>
+      <title>每天都在用的Windows触摸板，你真的了解他么</title>
+      <link>https://charmerkai.github.io/posts/2018-04/%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E7%94%A8%E7%9A%84windows%E8%A7%A6%E6%91%B8%E6%9D%BF%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BA%86%E8%A7%A3%E5%AE%83%E4%B9%88/</link>
+      <pubDate>Thu, 26 Apr 2018 09:25:37 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2018-04/%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E7%94%A8%E7%9A%84windows%E8%A7%A6%E6%91%B8%E6%9D%BF%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BA%86%E8%A7%A3%E5%AE%83%E4%B9%88/</guid>
+      <description>作为一个喜欢探索新东西的人，例如对于Windows触摸板双指翻页，三指切换的操作的探索，让我在使用笔记本时效率大增。使用多了，就满脑子想着还有什么新的骚操作，去Microsoft搜了下，发现自己还是太年轻，竟有这么多常用的手势没有被发现，遂整理如下：
+单指 点击：鼠标左键
+轻扫：鼠标移动
+双指 点击：鼠标右键
+轻扫：界面水平或垂直翻页
+缩放：缩小放大
+三指 点击：召唤Cortana
+左右轻扫：切换应用
+向上轻扫：多任务视图
+向下轻扫：显示桌面
+四指 点击：打开右侧通知界面
+左右轻扫：切换桌面
+向上轻扫：多任务视图
+向下轻扫：显示桌面
+ 其中的切换桌面要求至少有两个桌面，新建桌面的按钮在多任务视图的右下角。
+Cortana当然就是Windows自带的人工智能了，很多搜索，操作通过她来执行还是很方便的。
+这些所有操作在Windows设置里也可以找到，选择“开始” 按钮，然后依次选择“设置” &amp;gt;“设备” &amp;gt;“鼠标和触模板”。其中三指与四指还可以根据用户喜好自定义，更有更改音频音量，鼠标中键以及播放/暂停的功能等你使用。
+ 当然，Windows自带的手势设置只出现在Windows10中，如果你的系统未升级或者想体验更多的自定义手势，可以在查看本机触摸板厂商后下载对应驱动，安装后就可以尽情设置啦。
+参考：Microsoft help</description>
+    </item>
+    
+    <item>
+      <title>hexo的图标配置</title>
+      <link>https://charmerkai.github.io/posts/2018-01/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 30 Jan 2018 20:31:20 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2018-01/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/</guid>
+      <description>在hexo的主题优化中，我碰到了许多问题，印象最深的是界面中小图标的配置，没有具体的教程，只能自行摸索，故将整个过程记录下来，供需要的人参考。 当然，全文基于小白视角，前端大佬可以忽略这篇文章。
+ ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
+if(item.name == &amp;#39;weibo&amp;#39;) &amp;lt;i class=&amp;#34;iconfont icon-weibo&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
+·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
+lll
+我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
+接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-brands/css/fa-brands.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-regular/css/fa-regular.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-solid/css/fa-solid.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fontawesome/css/fontawesome.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fontawesome-all/css/fontawesome-all.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; 再根据官网的使用说明，添加
+&amp;lt;link href=&amp;#34;https://use.fontawesome.com/releases/v5.0.4/css/all.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; 至此，我们就完成了配置。
+·3使用图标 参考官网的说明， 如上图，在你需要使用或替换图标的位置使用
+&amp;lt;i class=&amp;#34;fas fa-camera-retro&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 即可，这是一个相机图标的示例。 每个图标的指代（fa-camera-retro）可以在官网搜索你需要的图标后查找到。 由于我替换的是blog作者界面的链接图标，故在author.ejs中修改代码
+&amp;lt;%} if(item.name == &amp;#39;instagram&amp;#39;) {%&amp;gt; &amp;lt;i class=&amp;#34;fab fa-instagram&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 这样就可以放上我的ins链接啦。</description>
+    </item>
+    
+  </channel>
+</rss>

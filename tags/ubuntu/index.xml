@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Kane</title>
+    <link>https://charmerkai.github.io/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on Kane</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 29 Mar 2019 09:53:53 +0800</lastBuildDate><atom:link href="https://charmerkai.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surface Go 双系统折腾记</title>
+      <link>https://charmerkai.github.io/posts/2019-03/surface-go-%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
+      <pubDate>Fri, 29 Mar 2019 09:53:53 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/posts/2019-03/surface-go-%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
+      <description>在入手了 surface-go 之后，兴奋劲只持续了两个月，于是我打算新一轮的折腾。很久以前就说过，适时的折腾可能才是生活的乐趣之一，这次也不例外。不同的是，我打算干票大的，在微软的电脑 surface-go 上安装一直很喜欢的 Ubuntu 18.04 ，正好最近看到 18.04 可以变换为 mac OS 的主题，装好后那该多酷啊。
+准备工作 首先我们需要一个 Ubuntu 18.04 的启动 u 盘，这个网上有很多教程，我就不细讲了。其次由于 surface-go 只有一个 type-c 接口，因此我们还需要一根转接线。
+除了硬件上的准备，我们还需要在 Windows 系统（我的是 win 10 系统）里改变一些配置，打开设置，在顶端搜索 Bitlocker，打开加密解密的设置界面，点击关闭加密的按钮，这里关掉 Bitlocker 是为后面关闭 secure boot 不会出问题。否则系统会一直要求你输入密钥。同时根据需要从 Windows 中压缩出来需要的磁盘空间（我总共给 Ubuntu 分配了 60 G 的空间），就是那个分区时的操作，只不过点击“压缩卷”后不需要再分配。
+这里的 Bitlocker 是微软为了不让你的设备丢失后内部信息被轻易的读取而设置的，但是为了额外的 boot 设备，我们不得不忍痛割爱的禁用它，这个解密过程会持续一段时间，耐心等待即可。
+从 U 盘启动 Ubuntu 将电脑关机，u 盘通过转接线连接到 surface-go，这一步会碰到很多问题，我会介绍两种方案：
+正常配置 UEFI 参考 Microsoft 官网的说明，surface 笔记本都采取了 UEFI 替代了原来的 BIOS 启动。同时，进入 UEFI 的方式也不再是单纯的狂按 F12 了，你会按照下列步骤进入 UEFI 设置界面：</description>
+    </item>
+    
+  </channel>
+</rss>
