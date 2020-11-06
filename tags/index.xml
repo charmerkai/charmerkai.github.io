@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Kane</title>
+    <title>Tags on blog by hugo</title>
     <link>https://charmerkai.github.io/tags/</link>
-    <description>Recent content in Tags on Kane</description>
+    <description>Recent content in Tags on blog by hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
@@ -32,15 +32,6 @@
       <pubDate>Mon, 19 Aug 2019 14:27:53 +0800</pubDate>
       
       <guid>https://charmerkai.github.io/tags/%E5%93%AA%E5%90%92/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>影评</title>
-      <link>https://charmerkai.github.io/tags/%E5%BD%B1%E8%AF%84/</link>
-      <pubDate>Mon, 19 Aug 2019 14:27:53 +0800</pubDate>
-      
-      <guid>https://charmerkai.github.io/tags/%E5%BD%B1%E8%AF%84/</guid>
       <description></description>
     </item>
     
@@ -167,24 +158,6 @@
       <pubDate>Mon, 31 Dec 2018 19:50:46 +0800</pubDate>
       
       <guid>https://charmerkai.github.io/tags/%E6%96%B0%E5%B9%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>微小说</title>
-      <link>https://charmerkai.github.io/tags/%E5%BE%AE%E5%B0%8F%E8%AF%B4/</link>
-      <pubDate>Mon, 13 Aug 2018 10:24:59 +0800</pubDate>
-      
-      <guid>https://charmerkai.github.io/tags/%E5%BE%AE%E5%B0%8F%E8%AF%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>青春</title>
-      <link>https://charmerkai.github.io/tags/%E9%9D%92%E6%98%A5/</link>
-      <pubDate>Mon, 13 Aug 2018 10:24:59 +0800</pubDate>
-      
-      <guid>https://charmerkai.github.io/tags/%E9%9D%92%E6%98%A5/</guid>
       <description></description>
     </item>
     
@@ -320,6 +293,15 @@
       <pubDate>Tue, 27 Feb 2018 10:20:37 +0800</pubDate>
       
       <guid>https://charmerkai.github.io/tags/%E6%96%B0%E5%9E%A3%E7%BB%93%E8%A1%A3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>青春</title>
+      <link>https://charmerkai.github.io/tags/%E9%9D%92%E6%98%A5/</link>
+      <pubDate>Tue, 27 Feb 2018 10:20:37 +0800</pubDate>
+      
+      <guid>https://charmerkai.github.io/tags/%E9%9D%92%E6%98%A5/</guid>
       <description></description>
     </item>
     

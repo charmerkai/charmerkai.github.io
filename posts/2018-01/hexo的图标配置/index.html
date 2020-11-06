@@ -9,14 +9,14 @@
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &amp;#39;weibo&amp;#39;) &amp;lt;i class=&amp;#34;iconfont icon-weibo&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-brands/css/fa-brands.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-regular/css/fa-regular.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fa-solid/css/fa-solid.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fontawesome/css/fontawesome.min.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;&amp;lt;%- url_for(&amp;#39;/fontawesome-all/css/fontawesome-all.css&amp;#39;) %&amp;gt;&amp;#34;&amp;gt; 再根据官网的使用说明，添加
 &amp;lt;link href=&amp;#34;https://use.fontawesome.com/releases/v5.0.4/css/all.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; 至此，我们就完成了配置。
 ·3使用图标 参考官网的说明， 如上图，在你需要使用或替换图标的位置使用
 &amp;lt;i class=&amp;#34;fas fa-camera-retro&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 即可，这是一个相机图标的示例。 每个图标的指代（fa-camera-retro）可以在官网搜索你需要的图标后查找到。 由于我替换的是blog作者界面的链接图标，故在author.ejs中修改代码
-&amp;lt;%} if(item.name == &amp;#39;instagram&amp;#39;) {%&amp;gt; &amp;lt;i class=&amp;#34;fab fa-instagram&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 这样就可以放上我的ins链接啦。" />
+&amp;lt;%} if(item.name == &amp;#39;instagram&amp;#39;) {%&amp;gt; &amp;lt;i class=&amp;#34;fab fa-instagram&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 这样就可以放上我的ins链接啦。
+·4更多操作 浏览Font Awesome的官网，你还可以发现更多地操作，如对你的图标进行缩放 旋转 以及小元素的移位 具体可以参考这里。" />
 <meta name="keywords" content=", hexo, 钻研知识, 图标配置, font" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -25,7 +25,7 @@ github
 
     <title>
         
-            hexo的图标配置 :: Kane  — A simple theme for Hugo
+            hexo的图标配置 :: blog by hugo 
         
     </title>
 
@@ -48,17 +48,17 @@ github
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &#39;weibo&#39;) &lt;i class=&#34;iconfont icon-weibo&#34;&gt;&lt;/i&gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
 &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-brands/css/fa-brands.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-regular/css/fa-regular.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-solid/css/fa-solid.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fontawesome/css/fontawesome.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fontawesome-all/css/fontawesome-all.css&#39;) %&gt;&#34;&gt; 再根据官网的使用说明，添加
 &lt;link href=&#34;https://use.fontawesome.com/releases/v5.0.4/css/all.css&#34; rel=&#34;stylesheet&#34;&gt; 至此，我们就完成了配置。
 ·3使用图标 参考官网的说明， 如上图，在你需要使用或替换图标的位置使用
 &lt;i class=&#34;fas fa-camera-retro&#34;&gt;&lt;/i&gt; 即可，这是一个相机图标的示例。 每个图标的指代（fa-camera-retro）可以在官网搜索你需要的图标后查找到。 由于我替换的是blog作者界面的链接图标，故在author.ejs中修改代码
-&lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。">
+&lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。
+·4更多操作 浏览Font Awesome的官网，你还可以发现更多地操作，如对你的图标进行缩放 旋转 以及小元素的移位 具体可以参考这里。">
 <meta itemprop="datePublished" content="2018-01-30T20:31:20+08:00" />
 <meta itemprop="dateModified" content="2018-01-30T20:31:20+08:00" />
-<meta itemprop="wordCount" content="75">
+<meta itemprop="wordCount" content="74">
 <meta itemprop="image" content="https://charmerkai.github.io"/>
 
 
@@ -73,14 +73,14 @@ github
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &#39;weibo&#39;) &lt;i class=&#34;iconfont icon-weibo&#34;&gt;&lt;/i&gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
 &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-brands/css/fa-brands.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-regular/css/fa-regular.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-solid/css/fa-solid.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fontawesome/css/fontawesome.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fontawesome-all/css/fontawesome-all.css&#39;) %&gt;&#34;&gt; 再根据官网的使用说明，添加
 &lt;link href=&#34;https://use.fontawesome.com/releases/v5.0.4/css/all.css&#34; rel=&#34;stylesheet&#34;&gt; 至此，我们就完成了配置。
 ·3使用图标 参考官网的说明， 如上图，在你需要使用或替换图标的位置使用
 &lt;i class=&#34;fas fa-camera-retro&#34;&gt;&lt;/i&gt; 即可，这是一个相机图标的示例。 每个图标的指代（fa-camera-retro）可以在官网搜索你需要的图标后查找到。 由于我替换的是blog作者界面的链接图标，故在author.ejs中修改代码
-&lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。"/>
+&lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。
+·4更多操作 浏览Font Awesome的官网，你还可以发现更多地操作，如对你的图标进行缩放 旋转 以及小元素的移位 具体可以参考这里。"/>
 
 
 
@@ -89,24 +89,24 @@ github
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &#39;weibo&#39;) &lt;i class=&#34;iconfont icon-weibo&#34;&gt;&lt;/i&gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
-github
 我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。
 接下来进行css文件的配置，注意到css文件总共有五种组合， 在你的layout/_partial/head.ejs中添加如下代码
 &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-brands/css/fa-brands.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-regular/css/fa-regular.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fa-solid/css/fa-solid.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fontawesome/css/fontawesome.min.css&#39;) %&gt;&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;&lt;%- url_for(&#39;/fontawesome-all/css/fontawesome-all.css&#39;) %&gt;&#34;&gt; 再根据官网的使用说明，添加
 &lt;link href=&#34;https://use.fontawesome.com/releases/v5.0.4/css/all.css&#34; rel=&#34;stylesheet&#34;&gt; 至此，我们就完成了配置。
 ·3使用图标 参考官网的说明， 如上图，在你需要使用或替换图标的位置使用
 &lt;i class=&#34;fas fa-camera-retro&#34;&gt;&lt;/i&gt; 即可，这是一个相机图标的示例。 每个图标的指代（fa-camera-retro）可以在官网搜索你需要的图标后查找到。 由于我替换的是blog作者界面的链接图标，故在author.ejs中修改代码
-&lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。" />
+&lt;%} if(item.name == &#39;instagram&#39;) {%&gt; &lt;i class=&#34;fab fa-instagram&#34;&gt;&lt;/i&gt; 这样就可以放上我的ins链接啦。
+·4更多操作 浏览Font Awesome的官网，你还可以发现更多地操作，如对你的图标进行缩放 旋转 以及小元素的移位 具体可以参考这里。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charmerkai.github.io/posts/2018-01/hexo%E7%9A%84%E5%9B%BE%E6%A0%87%E9%85%8D%E7%BD%AE/" />
 <meta property="og:image" content="https://charmerkai.github.io"/>
 <meta property="article:published_time" content="2018-01-30T20:31:20+08:00" />
-<meta property="article:modified_time" content="2018-01-30T20:31:20+08:00" /><meta property="og:site_name" content="Kane" />
+<meta property="article:modified_time" content="2018-01-30T20:31:20+08:00" /><meta property="og:site_name" content="blog by hugo" />
 
 
 
 
-    <meta property="article:section" content="学而时习之" />
+    <meta property="article:section" content="硬核知识" />
 
 
 
@@ -214,11 +214,9 @@ github
 <h2 id="2配置文件">·2配置文件</h2>
 <p>在Font Awesome的官网点击下载，解压后会有这么四个文件夹</p>
 <p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%201.png" alt=""></p>
-<p>github</p>
-<p><img src="https://raw.githubusercontent.com/charmerkai/img-storage-blog/master/2018-01/hexo%201.png" alt=""></p>
 <p>我们当然选择的是web-fonts-with-css，点进去后，需要用到的就是css的样式配置文件和webfont的资源文件，注意到主题source目录下存在css目录，所以将所有css文件拷贝到这里，再将webfont整个文件夹放到source下。</p>
 <p>接下来进行css文件的配置，注意到css文件总共有五种组合，
-<!-- raw HTML omitted --></p>
+<img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%202.png" alt=""></p>
 <p>在你的layout/_partial/head.ejs中添加如下代码</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%- url_for(&#39;/fa-brands/css/fa-brands.min.css&#39;) %&gt;&#34;</span><span style="color:#f92672">&gt;</span>
 <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%- url_for(&#39;/fa-regular/css/fa-regular.min.css&#39;) %&gt;&#34;</span><span style="color:#f92672">&gt;</span>
@@ -230,7 +228,7 @@ github
 </code></pre></div><p>至此，我们就完成了配置。</p>
 <h2 id="3使用图标">·3使用图标</h2>
 <p>参考官网的说明，
-<!-- raw HTML omitted --></p>
+<img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%203.png" alt=""></p>
 <p>如上图，在你需要使用或替换图标的位置使用</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">i</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-camera-retro&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/i&gt;</span>
 </code></pre></div><p>即可，这是一个相机图标的示例。
@@ -241,11 +239,11 @@ github
 </code></pre></div><p>这样就可以放上我的ins链接啦。</p>
 <h2 id="4更多操作">·4更多操作</h2>
 <p>浏览Font Awesome的官网，你还可以发现更多地操作，如对你的图标进行<strong>缩放</strong>
-<!-- raw HTML omitted --></p>
+<img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%204.png" alt=""></p>
 <p><strong>旋转</strong>
-<!-- raw HTML omitted --></p>
+<img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%205.png" alt=""></p>
 <p>以及小元素的<strong>移位</strong>
-<!-- raw HTML omitted --></p>
+<img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2018-01/hexo%206.png" alt=""></p>
 <p>具体可以参考<a href="https://fontawesome.com/how-to-use/svg-with-js">这里</a>。</p>
 
       </div>
@@ -269,7 +267,7 @@ github
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-        <span class="tag"><a href="https://charmerkai.github.io/categories/%E5%AD%A6%E8%80%8C%E6%97%B6%E4%B9%A0%E4%B9%8B/">学而时习之</a></span>
+        <span class="tag"><a href="https://charmerkai.github.io/categories/%E7%A1%AC%E6%A0%B8%E7%9F%A5%E8%AF%86/">硬核知识</a></span>
         
     </p>
 
@@ -282,7 +280,7 @@ github
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        75 Words
+        74 Words
       </p>
 
       <p>
