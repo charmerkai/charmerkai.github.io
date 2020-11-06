@@ -359,6 +359,7 @@ Keep on believing.
  ·1寻找图标 由于我需要更改的是author个人信息的链接图标，所以打开layout/partial中的author.ejs，发现有这么几行代码
 if(item.name == &amp;#39;weibo&amp;#39;) &amp;lt;i class=&amp;#34;iconfont icon-weibo&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; 很明显，信息中weibo的图标是从这个iconfont中生成的，搜索 iconfont 发现是阿里旗下的一个图标素材库，但是素材需要添加购物车登陆下载，像我这么懒的人就不想再去申个账号，又搜索图标配置，发现了另一个国外的网站，Font Awesome，这是一个源码在Github上的开源项目，提供绝大多数免费的icon供网页等应用。
 ·2配置文件 在Font Awesome的官网点击下载，解压后会有这么四个文件夹
+cloudsrc
 cloud
 issue
 github
