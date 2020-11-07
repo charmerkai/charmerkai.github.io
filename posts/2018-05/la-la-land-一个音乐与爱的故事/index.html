@@ -301,28 +301,6 @@
         <div id="comments">
           
 		   
-<div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: '[1bc925d91a46b7c54a7f]',
-    clientSecret: '[90dd416ca2f89c3e47a6b0204175b36d5bcd010e]',
-    repo: 'charmerkai.github.io',
-    owner: 'charmerkai',
-    admin: ['charmerkai'],
-    id: location.pathname, 
-    distractionFreeMode: false 
-  });
-  (function() {
-    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
-      return;
-    }
-    gitalk.render('gitalk-container');
-  })();
-</script>
-
 
         </div>
     
