@@ -6,8 +6,123 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 19 Nov 2019 16:45:53 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2020 11:36:12 +0800</lastBuildDate>
         <atom:link href="https://charmerkai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>给hugo加入gitalk</title>
+            <link>https://charmerkai.github.io/posts/2020-11/%E7%BB%99hugo%E5%8A%A0%E5%85%A5gitalk/</link>
+            <pubDate>Sat, 07 Nov 2020 11:36:12 +0800</pubDate>
+            
+            <guid>https://charmerkai.github.io/posts/2020-11/%E7%BB%99hugo%E5%8A%A0%E5%85%A5gitalk/</guid>
+            <description>评论系统对于博客的重要性不言而喻，动态网站通常都有配置好的评论区，而静态网页，大多需要依赖第三方评论系统。hugo 作为轻量级博客生成器，评论系统的加入会让功能更加完善。
+本文参考，这里仅仅做个记录，以便日后参考。
+关于 Gitalk Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
+ 官方网址： https://github.com/gitalk/gitalk/ 在线示例： https://gitalk.github.io/  特性  使用 GitHub 登录 支持多语言 [en, zh-CN, zh-TW, es-ES, fr, ru, de, pl, ko] 支持个人或组织 无干扰模式（设置 distractionFreeMode 为 true 开启） 快捷键提交评论 （cmd|ctrl + enter）   注册OAuth application 首先你需要有一个 github 账号，点击个人头像-setting-Developer settings-OAuth Apps 后你会看到如下画面。
+点击红框选中的 New 按钮，创建一个新的 OAuth App。可以看到我这里已经创建好了一个
+然后在创建页面填入相关信息，起一个适合的名字，然后红线选中的两个 URL 都填写你博客的网页地址，例如我的应该是 https://charmerkai.github.io
+点击绿色的注册按钮，可以看到建立好的 OAuth App，如下图，记录好自己的 Client ID 与 Client secrets，后面需要用到。</description>
+            <content type="html"><![CDATA[<p>评论系统对于博客的重要性不言而喻，动态网站通常都有配置好的评论区，而静态网页，大多需要依赖第三方评论系统。hugo 作为轻量级博客生成器，评论系统的加入会让功能更加完善。</p>
+<p>本文<a href="https://mogeko.me/2018/024/">参考</a>，这里仅仅做个记录，以便日后参考。</p>
+<h2 id="关于-gitalk">关于 Gitalk</h2>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。</p>
+<ul>
+<li>官方网址： <a href="https://github.com/gitalk/gitalk/">https://github.com/gitalk/gitalk/</a></li>
+<li>在线示例： <a href="https://gitalk.github.io/">https://gitalk.github.io/</a></li>
+</ul>
+<h3 id="特性">特性</h3>
+<ul>
+<li>使用 GitHub 登录</li>
+<li>支持多语言 [en, zh-CN, zh-TW, es-ES, fr, ru, de, pl, ko]</li>
+<li>支持个人或组织</li>
+<li>无干扰模式（设置 distractionFreeMode 为 true 开启）</li>
+<li>快捷键提交评论 （cmd|ctrl + enter）</li>
+</ul>
+<hr>
+<h2 id="注册oauth-application">注册OAuth application</h2>
+<p>首先你需要有一个 github 账号，点击<code>个人头像</code>-<code>setting</code>-<code>Developer settings</code>-<code>OAuth Apps</code> 后你会看到如下画面。</p>
+<p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2020-11/gitalk1.png" alt=""></p>
+<p>点击红框选中的 New 按钮，创建一个新的 OAuth App。<em>可以看到我这里已经创建好了一个</em></p>
+<p>然后在创建页面填入相关信息，起一个适合的名字，然后红线选中的两个 URL 都填写你博客的网页地址，例如我的应该是 <code>https://charmerkai.github.io</code></p>
+<p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2020-11/gitalk2.png" alt=""></p>
+<p>点击绿色的注册按钮，可以看到建立好的 OAuth App，如下图，记录好自己的 <code>Client ID</code> 与 <code>Client secrets</code>，后面需要用到。</p>
+<p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2020-11/gitalk3.png" alt=""></p>
+<hr>
+<h2 id="在主题的-html-中加入-gitalk">在主题的 HTML 中加入 gitalk</h2>
+<p>首先，在主题的 <code>layouts/partials</code> 文件夹中创建 <code>gitalk.html</code> 文件，写下如下代码</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ if .Site.Params.enableGitalk }}
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gitalk-container&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/gitalk/dist/gitalk.css&#34;</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/gitalk/dist/gitalk.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span>&gt;
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gitalk</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Gitalk</span>({
+    <span style="color:#a6e22e">clientID</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;{{ .Site.Params.Gitalk.clientID }}&#39;</span>,
+    <span style="color:#a6e22e">clientSecret</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;{{ .Site.Params.Gitalk.clientSecret }}&#39;</span>,
+    <span style="color:#a6e22e">repo</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;{{ .Site.Params.Gitalk.repo }}&#39;</span>,
+    <span style="color:#a6e22e">owner</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;{{ .Site.Params.Gitalk.owner }}&#39;</span>,
+    <span style="color:#a6e22e">admin</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;{{ .Site.Params.Gitalk.owner }}&#39;</span>],
+    <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">pathname</span>, <span style="color:#75715e">// Ensure uniqueness and length less than 50
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">distractionFreeMode</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> <span style="color:#75715e">// Facebook-like distraction free mode
+</span><span style="color:#75715e"></span>  });
+  (<span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">if</span> ([<span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#e6db74">&#34;127.0.0.1&#34;</span>].<span style="color:#a6e22e">indexOf</span>(window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hostname</span>) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
+      document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;gitalk-container&#39;</span>).<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Gitalk comments not available by default when the website is previewed locally.&#39;</span>;
+      <span style="color:#66d9ef">return</span>;
+    }
+    <span style="color:#a6e22e">gitalk</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;gitalk-container&#39;</span>);
+  })();
+&lt;/<span style="color:#f92672">script</span>&gt;
+{{ end }}
+</code></pre></div><p>下面需要找到 gitalk 加入博客页面的位置，用我使用的 <code>hello-friend-ng</code> 主题为例，打开主题目录下的 <code>layouts/posts/single.html</code> 文件，翻到最下面，可以看到原作者预留了评论区的位置，从 135 到 141 行</p>
+<p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2020-11/gitalk4.png" alt=""></p>
+<p>外层的 if 判断的是另一个第三方评论工具 Disqus，我们可以直接删去。136 行的 if 判断参数列表中的Commit 是否为真，我们将参数名称修改为自己的参数，同时在 <!-- raw HTML omitted --> 与 <!-- raw HTML omitted --> 包裹的块中加入自带的 gitalk 模板，<code> {{ partial &quot;gitalk.html&quot; . }}</code>，修改后如下：</p>
+<p><img src="https://img-blog-1255963329.cos.ap-beijing.myqcloud.com/2020-11/gitalk5.png" alt=""></p>
+<p>随后在 <code>config.toml</code> 中加入如下代码</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">enableGitalk</span> = <span style="color:#66d9ef">true</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">gitalk</span>] 
+    <span style="color:#a6e22e">clientID</span> = <span style="color:#e6db74">&#34;[Client ID]&#34;</span> <span style="color:#75715e"># Your client ID</span>
+    <span style="color:#a6e22e">clientSecret</span> = <span style="color:#e6db74">&#34;[Client Secret]&#34;</span> <span style="color:#75715e"># Your client secret</span>
+    <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;mogeko.github.io&#34;</span> <span style="color:#75715e"># The repo to store comments</span>
+    <span style="color:#a6e22e">owner</span> = <span style="color:#e6db74">&#34;Mogeko&#34;</span> <span style="color:#75715e"># Your GitHub ID</span>
+    <span style="color:#a6e22e">admin</span>= <span style="color:#e6db74">&#34;Mogeko&#34;</span> <span style="color:#75715e"># Required. Github repository owner and collaborators. (Users who having write access to this repository)</span>
+    <span style="color:#a6e22e">id</span>= <span style="color:#e6db74">&#34;location.pathname&#34;</span> <span style="color:#75715e"># The unique id of the page.</span>
+    <span style="color:#a6e22e">labels</span>= <span style="color:#e6db74">&#34;gitalk&#34;</span> <span style="color:#75715e"># Github issue labels. If you used to use Gitment, you can change it</span>
+    <span style="color:#a6e22e">perPage</span>= <span style="color:#ae81ff">15</span> <span style="color:#75715e"># Pagination size, with maximum 100.</span>
+    <span style="color:#a6e22e">pagerDirection</span>= <span style="color:#e6db74">&#34;last&#34;</span> <span style="color:#75715e"># Comment sorting direction, available values are &#39;last&#39; and &#39;first&#39;.</span>
+    <span style="color:#a6e22e">createIssueManually</span>= <span style="color:#66d9ef">false</span> <span style="color:#75715e"># If it is &#39;false&#39;, it is auto to make a Github issue when the administrators login.</span>
+    <span style="color:#a6e22e">distractionFreeMode</span>= <span style="color:#66d9ef">false</span> <span style="color:#75715e"># Enable hot key (cmd|ctrl + enter) submit comment.</span>
+</code></pre></div><p>注意这里的参数 <code>enableGitalk</code> 对应着 html 中 <code>EnableGitalk</code> 使用这个参数就可以控制评论区是否存在了。</p>
+<hr>
+<h2 id="注意点">注意点</h2>
+<ul>
+<li>gitalk 在 hugo server 模式下无法显示，需要部署到网页端后自行开启</li>
+<li>gitalk 作为第三方授权软件，有一定的安全风险性，例如可能授权时利用你的 github 账号 star 别的工程，具体可以参考 <a href="https://www.v2ex.com/t/535608">这里</a> 的说明，是否继续使用取决于个人喜好</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>重归博客</title>
+            <link>https://charmerkai.github.io/posts/2020-11/%E9%87%8D%E5%BD%92%E5%8D%9A%E5%AE%A2/</link>
+            <pubDate>Sat, 07 Nov 2020 11:08:27 +0800</pubDate>
+            
+            <guid>https://charmerkai.github.io/posts/2020-11/%E9%87%8D%E5%BD%92%E5%8D%9A%E5%AE%A2/</guid>
+            <description>转眼已经一年没写博客了，这一年也发生了很多事情，疫情，最难毕业季，所幸准备的还算充分，不至于颗粒无收。个人视频频道也在稳步前进，希望以后涨粉多多。
+有段时间发现博客的网址挂了，查看后发现原来托管的 coding 平台删库跑路了，个人版 coding 全部删除。看来还是 github 靠谱些。于是这几天重新整合下把网页又托管在了 github 下，同时换了个新的 hugo 主题。
+这一年看的电影和书都很少，倒是看了不少综艺，还真是惭愧呢。争取影评和读书笔记系列都能继续更下去。同时硬核知识开始变主力军了，整理下发一些自己碰到的各种坑。
+那么，新的时期开始了。逐渐步入社会，成为打工人，也希望以后一帆风顺吧。
+:smile: emoji 测试 :smile_cat: :smiley:
+END </description>
+            <content type="html"><![CDATA[<p>转眼已经一年没写博客了，这一年也发生了很多事情，疫情，最难毕业季，所幸准备的还算充分，不至于颗粒无收。个人视频频道也在稳步前进，希望以后涨粉多多。</p>
+<p>有段时间发现博客的网址挂了，查看后发现原来托管的 coding 平台删库跑路了，个人版 coding 全部删除。看来还是 github 靠谱些。于是这几天重新整合下把网页又托管在了 github 下，同时换了个新的 hugo 主题。</p>
+<p>这一年看的电影和书都很少，倒是看了不少综艺，还真是惭愧呢。争取影评和读书笔记系列都能继续更下去。同时硬核知识开始变主力军了，整理下发一些自己碰到的各种坑。</p>
+<p>那么，新的时期开始了。逐渐步入社会，成为打工人，也希望以后一帆风顺吧。</p>
+<p>:smile: emoji 测试 :smile_cat: :smiley:</p>
+<h2 id="end">END</h2>
+]]></content>
+        </item>
         
         <item>
             <title>新的视频系列来啦</title>
